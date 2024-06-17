@@ -1,6 +1,5 @@
 import { Separator } from "../ui/separator"
-import { Avatar } from "../ui/avatar"
-import { AvatarImage } from "@radix-ui/react-avatar"
+import { Avatar, AvatarImage } from "../ui/avatar"
 
 const UserCard = () => {
     return (
