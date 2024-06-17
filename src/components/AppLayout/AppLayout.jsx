@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Separator } from '../separator'
+import { Separator } from '../ui/separator'
 import AppHeader from './AppHeader/AppHeader'
 import AppSidebar from './AppSidebar/AppSidebar'
 
