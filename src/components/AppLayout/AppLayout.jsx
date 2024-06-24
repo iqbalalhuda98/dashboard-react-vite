@@ -1,21 +1,15 @@
 /* eslint-disable react/prop-types */
-import { Separator } from '../ui/separator'
 import AppHeader from './AppHeader/AppHeader'
 import AppSidebar from './AppSidebar/AppSidebar'
 
 const AppLayout = ({ children }) => {
     return (
-        <div className='w-full h-screen flex flex-row'>
+        <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
             <AppSidebar />
-            <Separator orientation="vertical" />
-            <div className='w-full h-full flex flex-col'>
-                <header className='h-16 w-full'>
-                    <AppHeader />
-                </header>
-                <Separator />
-                <main className='w-full h-full p-4'>
-                    {children}
-                </main>
+            <div className="flex flex-col">
+                <AppHeader />
+                
+                {children}
             </div>
         </div>
     )
